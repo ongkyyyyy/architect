@@ -2,11 +2,8 @@
 
 Our audit log allows system to easily monitor user activity and events. It provides a strong foundation for various user management and health check business scenarios.
 
-## View all logs
-We captures and organizes authentication events into a table. It keeps track of the event name, user, application, and timestamp. You can narrow down the results by filtering based on the event name and application name. Filtering on a specific event will provide additional details.
-
-## Capture user activity at the tenant level
-Our logs offer comprehensive details, ensuring ease of action and customer safety. They capture and record the following information:
+## Audits Entity
+Our logs offer comprehensive details, ensuring ease of action and customer safety. They capture and record the following properties:
 
 | Name                  | Type                | Description                                        | Unique | Required  |
 |-----------------------|---------------------|----------------------------------------------------|--------|-----------|
@@ -28,7 +25,10 @@ NOTE
 
 By maintaining these event records, organizations can effectively detect possible security risks and promptly address them to prevent unauthorized system access.
 
-## Perform a detailed analysis at the user level
+## View all logs
+We captures and organizes authentication events into a table. It keeps track of the event name, user, application, and timestamp. You can narrow down the results by filtering based on the event name and application name. Filtering on a specific event will provide additional details.
+
+## Perform a detailed analysis
 Administrators can perform a detailed analysis of logs associated with specific users, facilitating comprehensive investigations into specific events. The navigation process is straightforward and user-friendly.
 
 To access user-specific logs, follow these steps: Navigate to User Management, select the desired user, and click on User Logs. The resulting table will exclusively display log events performed and triggered by that particular user.
