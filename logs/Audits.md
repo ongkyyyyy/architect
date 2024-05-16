@@ -8,13 +8,13 @@ Our logs offer comprehensive details, ensuring ease of action and customer safet
 | Name                  | Type                | Description                                        | Unique | Required  |
 |-----------------------|---------------------|----------------------------------------------------|--------|-----------|
 | id                    | String    | A unique identifier for the event log entry                  |   ✅   |    ✅    |
-| application_id        | string    | Application ID that associated with the event                |   ❌   |    ✅    |
+| application_id        | String    | Application ID that associated with the event                |   ❌   |    ✅    |
 | application_name      | String    | The name of the application related to the event             |   ❌   |    ✅    |
 | event_id              | String    | Event ID of the nature or category of the event              |   ❌   |    ✅    |
 | event_name            | String    | The nature or category of the event                          |   ❌   |    ✅    |
 | user_id               | String    | The identifier of the user associated with the event         |   ❌   |    ✅    |
-| data_before           | object    | Additional data before changed in customizable properties    |   ❌   |    ✅    |
-| data_changed          | object    | Additional data after changed in customizable properties     |   ❌   |    ✅    |
+| data_before           | Object    | Additional data before changed in customizable properties    |   ❌   |    ✅    |
+| data_changed          | Object    | Additional data after changed in customizable properties     |   ❌   |    ✅    |
 | ip_address            | String    | The IP address from which the event originated               |   ❌   |    ✅    |
 | user_agent            | String    | The browser or device information from which the event came  |   ❌   |    ✅    |
 | timestamp             | Date time | The date and time when the event occurred                    |   ❌   |    ✅    |

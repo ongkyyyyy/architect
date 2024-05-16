@@ -6,19 +6,19 @@ The following properties (except password_encrypted and password_encryption_meth
 
 | Name                       | Type      | Description                                      | Unique  | Required  |
 |----------------------------|-----------|--------------------------------------------------|--------|-----------|
-| id                         | string    | Unique identifier                                |   ✅   |    ✅    |
-| username                   | string    | Username for sign-in                             |   ✅   |    ❌    |
-| primary_email              | string    | Primary email                                    |   ✅   |    ❌    |
-| primary_phone              | string    | Primary phone number                             |   ✅   |    ❌    |
-| name                       | string    | Full name                                        |   ❌   |    ❌    |
-| avatar                     | string    | URL pointing to user's avatar image              |   ❌   |    ❌    |
-| password_encrypted         | string    | Encrypted password                               |   ❌   |    ❌    |
-| password_encryption_method | string    | Password encryption method                       |   ❌   |    ❌    |
-| application_id             | string    | Application ID that the user first registered    |   ❌   |    ✅    |
-| custom_data                | object    | Additional info in customizable properties       |   ❌   |    ✅    |
-| identities                 | object    | User info retrieved from social sign-in          |   ❌   |    ✅    |
-| last_sign_in_at            | date time | Timestamp when the user signed in last time      |   ❌   |    ✅    |
-| is_suspended               | bool      | User suspend mark                                |   ❌   |    ✅    |
+| id                         | String    | Unique identifier                                |   ✅   |    ✅    |
+| username                   | String    | Username for sign-in                             |   ✅   |    ❌    |
+| primary_email              | String    | Primary email                                    |   ✅   |    ❌    |
+| primary_phone              | String    | Primary phone number                             |   ✅   |    ❌    |
+| name                       | String    | Full name                                        |   ❌   |    ❌    |
+| avatar                     | String    | URL pointing to user's avatar image              |   ❌   |    ❌    |
+| password_encrypted         | String    | Encrypted password                               |   ❌   |    ❌    |
+| password_encryption_method | String    | Password encryption method                       |   ❌   |    ❌    |
+| application_id             | String    | Application ID that the user first registered    |   ❌   |    ✅    |
+| custom_data                | Object    | Additional info in customizable properties       |   ❌   |    ✅    |
+| identities                 | Object    | User info retrieved from social sign-in          |   ❌   |    ✅    |
+| last_sign_in_at            | Date time | Timestamp when the user signed in last time      |   ❌   |    ✅    |
+| is_suspended               | Boolean   | User suspend mark                                |   ❌   |    ✅    |
 
 NOTE
 - Unique: Ensures the uniqueness of the values entered into a property of a database table.
