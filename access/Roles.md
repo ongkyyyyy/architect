@@ -1,8 +1,8 @@
 # 🔐 Roles
-The roles and permissions are an important entities of the identity service. We will describe the role-related concepts and details in the following.
+The roles and permissions are an important entities of the role access service. We will describe the role-related concepts and details in the following.
 
 ## Access Entity
-The following properties for identity_access table:
+The following properties for access table:
 
 | Name                | Type      | Description                           | Unique | Required  |
 |---------------------|-----------|---------------------------------------|--------|-----------|
@@ -13,7 +13,7 @@ The following properties for identity_access table:
 This table is designed to facilitate the creation and management of access groups within a multi-tenant system. Each access group can contain multiple roles, allowing for flexible and granular access control.
 
 ## Roles Entity
-The following properties for identity_roles table:
+The following properties for access_roles table:
 
 | Name                  | Type      | Description                                      | Unique | Required  |
 |-----------------------|-----------|--------------------------------------------------|--------|-----------|
@@ -22,7 +22,7 @@ The following properties for identity_roles table:
 | role_description      | String    | Description of the role                          |   ❌   |    ❌    |
 
 ## Permissions Entity
-The following properties for identity_permissions table:
+The following properties for access_permissions table:
 
 | Name                    | Type      | Description                                      | Unique | Required  |
 |-------------------------|-----------|--------------------------------------------------|--------|-----------|
@@ -31,7 +31,7 @@ The following properties for identity_permissions table:
 | permission_description  | String    | Description of the permission                    |   ❌   |    ❌    |
 
 ## Role Permissions Entity
-The following properties for identity_role_permissions table (associative table for Roles and Permissions):
+The following properties for access_role_permissions table (associative table for Roles and Permissions):
 
 | Name                  | Type      | Description                                      | Unique | Required  |
 |-----------------------|-----------|--------------------------------------------------|--------|-----------|
@@ -39,7 +39,7 @@ The following properties for identity_role_permissions table (associative table 
 | permission_id         | INT       | Foreign key from Permissions table               |   ❌   |    ✅    |
 
 ## Access Roles Entity
-The following properties for identity_access_roles table (associative table for Access and Roles):
+The following properties for access_roles table (associative table for Access and Roles):
 
 | Name                  | Type      | Description                                      | Unique | Required  |
 |-----------------------|-----------|--------------------------------------------------|--------|-----------|
@@ -49,7 +49,7 @@ The following properties for identity_access_roles table (associative table for 
 This table is associate access group to the roles. The field ensures that access groups are properly segmented.
 
 ## User Access Entity
-The following properties for identity_user_acces table (associative table for Users and Access):
+The following properties for acces_users table (associative table for Users and Access):
 
 | Name             | Type      | Description                                      | Unique | Required  |
 |------------------|-----------|--------------------------------------------------|--------|-----------|
