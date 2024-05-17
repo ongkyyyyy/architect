@@ -28,6 +28,12 @@ At Berani Digital ID, we believe that knowledge should be shared, nurtured, and 
 - **Collaboration**: Connect with a diverse community of developers, designers, and domain experts.
 - **Access to Experts**: Learn from experienced mentors who are passionate about empowering others.
 
+# Library
+
+## Naming Convention
+
+Our library naming scheme follow the following convention "library-framework-title"
+
 Ready to contribute? Together, let's connect, innovate & thrive! 🌈👩‍💻👨‍💻
 
 Powered by Berani Digital ID © 2024
