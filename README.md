@@ -32,7 +32,14 @@ At Berani Digital ID, we believe that knowledge should be shared, nurtured, and 
 
 ## Naming Convention
 
-Our library naming scheme follow the following convention "library-framework-title"
+Our library naming scheme follow the following convention `library-framework-title`
+
+# Related Repositories
+
+- [Berani Base Architect Laravel](https://github.com/beranidigital/berani-base-architect) - Used to demonstrate and develop library, can be used for template
+
+
+# About
 
 Ready to contribute? Together, let's connect, innovate & thrive! 🌈👩‍💻👨‍💻
 
