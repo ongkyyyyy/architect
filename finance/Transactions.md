@@ -24,7 +24,7 @@ The following properties for fin_trx_types table:
 | trx_type_id             | INT       | Primary key, unique bank ID                 |   ✅   |    ✅    |
 | trx_type_code           | String(6) | Code of the transaction type                |   ❌   |    ✅    |
 | trx_type_name           | String    | Name of the transaction type                |   ❌   |    ✅    |
-| trx_type_is_public      | boolean   | Is transaction type public (Default: False) |   ❌   |    ✅    |
+| trx_type_is_deleted     | boolean   | Is trx type deleted (Default: False)        |   ❌   |    ✅    |
 
 
 ## Transaction Method Entity
@@ -35,7 +35,7 @@ The following properties for fin_trx_methods table:
 | trx_method_id           | INT       | Primary key, unique bank ID                   |   ✅   |    ✅    |
 | trx_method_code         | String(6) | Code of the transaction method                |   ❌   |    ✅    |
 | trx_method_name         | String    | Name of the transaction method                |   ❌   |    ✅    |
-| trx_method_is_public    | boolean   | Is transaction method public (Default: False) |   ❌   |    ✅    |
+| trx_method_is_deleted   | boolean   | Is trx method deleted (Default: False)        |   ❌   |    ✅    |
 
 
 ## Transaction Status Entity
@@ -46,7 +46,7 @@ The following properties for fin_trx_types table:
 | trx_status_id           | INT       | Primary key, unique status ID                 |   ✅   |    ✅    |
 | trx_status_code         | String(6) | Code of the transaction status                |   ❌   |    ✅    |
 | trx_status_name         | String    | Name of the transaction status                |   ❌   |    ✅    |
-| trx_status_is_public    | boolean   | Is transaction status public (Default: False) |   ❌   |    ✅    |
+| trx_status_is_deleted   | boolean   | Is trx status deleted (Default: False)        |   ❌   |    ✅    |
 
 
 NOTE
@@ -57,7 +57,7 @@ NOTE
 ## Default Data
 
 ### Transaction Type
-| trx_type_id | trx_type_code | trx_type_name          | trx_type_is_public      |
+| trx_type_id | trx_type_code | trx_type_name          | trx_type_is_deleted     |
 |-------------|---------------|------------------------|-------------------------|
 | 1           | IN            | Setoran                | false                   |
 | 2           | OUT           | Penarikan              | false                   |
@@ -66,7 +66,7 @@ NOTE
 
 
 ### Transaction Method
-| trx_method_id | trx_method_code | trx_method_name          | trx_method_is_public     |
+| trx_method_id | trx_method_code | trx_method_name          | trx_method_is_deleted    |
 |---------------|-----------------|--------------------------|--------------------------|
 | 1             | CASH            | Cash/Tunai               | false                    |
 | 2             | BANK            | Bank Transfer            | false                    |
@@ -74,7 +74,7 @@ NOTE
 
 
 ### Transaction Status
-| trx_status_id | trx_status_code | trx_status_name          | trx_status_is_public     |
+| trx_status_id | trx_status_code | trx_status_name          | trx_status_is_deleted    |
 |---------------|-----------------|--------------------------|--------------------------|
 | 1             | 001             | Approved                 | false                    |
 | 2             | 002             | Cancelled                | false                    |
