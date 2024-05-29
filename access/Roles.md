@@ -62,5 +62,11 @@ NOTE
 
 This table is associate user to their access groups. The field ensures that access groups are properly segmented between different tenants, maintaining data isolation and security.
 
+## Default Data
+
+### System Role
+We create default role `System` to allow all user access permissions, known as `Super Admin`. This role will be used for system maintenance and several administrator use cases only.
+
+
 ---
 Powered by Berani Digital ID © 2024
