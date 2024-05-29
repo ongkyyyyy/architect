@@ -12,7 +12,6 @@ The following properties for fin_bank_accounts table:
 | user_id                   | INT       | Foreign key from User table               |   ❌   |    ✅    |
 | bank_id                   | INT       | Foreign key from Bank table               |   ❌   |    ✅    |
 
-
 ## Banks Entity
 The following properties for fin_banks table:
 
@@ -23,7 +22,6 @@ The following properties for fin_banks table:
 | bank_code                 | String    | Code of the bank                          |   ❌   |    ❌    |
 | bank_logo                 | String    | Logo of the bank                          |   ❌   |    ❌    |
 | bank_is_active            | boolean   | Is bank active (Default: True)            |   ❌   |    ✅    |
-
 
 ## Bank Type Entity
 The following properties for fin_bank_types table:
@@ -36,31 +34,6 @@ The following properties for fin_bank_types table:
 
 Default Entity:
 `[{'Admin',true},{'Nasabah',false}]`
-
-
-## User Wallet Entity
-The following properties for fin_user_wallets table:
-
-| Name                      | Type      | Description                                | Unique | Required  |
-|---------------------------|-----------|--------------------------------------------|--------|-----------|
-| wallet_id                 | INT       | Primary key, unique wallet ID              |   ✅   |    ✅    |
-| wallet_name               | String    | Name of the wallet                         |   ❌   |    ✅    |
-| wallet_balance            | Decimal   | Total Balance of the wallet                |   ❌   |    ✅    |
-| wallet_description        | String    | Description of the wallet                  |   ❌   |    ❌    |
-| wallet_icon               | String    | Icon of the wallet                         |   ❌   |    ❌    |
-| user_id                   | INT       | Foreign key from User table                |   ❌   |    ✅    |
-
-
-## User Wallet Type Entity
-The following properties for user_wallet_type table:
-
-| Name                      | Type      | Description                               | Unique | Required  |
-|---------------------------|-----------|-------------------------------------------|--------|-----------|
-| wallet_type_id            | INT       | Primary key, unique bank ID               |   ✅   |    ✅    |
-| wallet_type_name          | String    | Name of the bank                          |   ❌   |    ✅    |
-| wallet_type_is_public     | boolean   | Is wallet type public (Default: False)    |   ❌   |    ✅    |
-| wallet_type_is_active     | boolean   | Is wallet type public (Default: True)     |   ❌   |    ✅    |
-
 
 NOTE
 - Unique: Ensures the uniqueness of the values entered into a property of a database table.
