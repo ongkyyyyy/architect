@@ -64,6 +64,17 @@ Used `Accounts` :
 - 2 - Account ID: [c] `4 | Utang | 2XXX` (Berdasar COA user)
 - 2 - Account Transaction Type: `Debit`
 
+### Transaction 3 - 'Transfer Sesama'
+- Transaction Method: [e] `| 3 | SYSTEM | Transaction`
+- Transaction Status: [f] `1 | 001 | Approved`
+- Journal ID: {Incremental}
+- Transaction Type: [d] `| 4 | TF-OUT | Transfer Keluar`
+- 1 - Account ID: [c] `4 | Utang | 2XXX` (Berdasar COA user)
+- 1 - Account Transaction Type: `Credit`
+- Transaction Type: [d] `3 | TF-IN | Transfer Masuk`
+- 2 - Account ID: [c] `4 | Utang | 2XXX` (Berdasar COA user)
+- 2 - Account Transaction Type: `Debit`
+
 
 ---
 Powered by Berani Digital ID © 2024
