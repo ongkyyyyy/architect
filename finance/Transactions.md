@@ -26,9 +26,6 @@ The following properties for fin_trx_types table:
 | trx_type_name           | String    | Name of the transaction type                |   ❌   |    ✅    |
 | trx_type_is_public      | boolean   | Is transaction type public (Default: False) |   ❌   |    ✅    |
 
-Default Entity:
-`[{'1','Setoran'},{'2','Penarikan'},{'3','Transfer Keluar'},{'4','Transfer Masuk'}]`
-
 
 ## Transaction Method Entity
 The following properties for fin_trx_methods table:
@@ -39,9 +36,6 @@ The following properties for fin_trx_methods table:
 | trx_method_code         | String(6) | Code of the transaction method                |   ❌   |    ✅    |
 | trx_method_name         | String    | Name of the transaction method                |   ❌   |    ✅    |
 | trx_method_is_public    | boolean   | Is transaction method public (Default: False) |   ❌   |    ✅    |
-
-Default Entity:
-`[{'1','Cash/Tunai'},{'2','Bank Transfer'}]`
 
 
 ## Transaction Status Entity
@@ -54,13 +48,39 @@ The following properties for fin_trx_types table:
 | trx_status_name         | String    | Name of the transaction status                |   ❌   |    ✅    |
 | trx_status_is_public    | boolean   | Is transaction status public (Default: False) |   ❌   |    ✅    |
 
-Default Entity:
-`[{'0','Draft'},{'1','Approved'},{'2','Cancelled'},{'3','Pending'},{'9','Denied'}]`
-
 
 NOTE
 - Unique: Ensures the uniqueness of the values entered into a property of a database table.
 - Required: Ensures that the values entered a property of a database table can NOT be NULL.
+
+
+## Default Data
+
+### Transaction Type
+| trx_type_id | trx_type_code | trx_type_name          | trx_type_is_public      |
+|-------------|---------------|------------------------|-------------------------|
+| 1           | IN            | Setoran                | false                   |
+| 2           | OUT           | Penarikan              | false                   |
+| 3           | TF-IN         | Transfer Keluar        | false                   |
+| 4           | TF-OUT        | Transfer Masuk         | false                   |
+
+
+### Transaction Method
+| trx_method_id | trx_method_code | trx_method_name          | trx_method_is_public     |
+|---------------|-----------------|--------------------------|--------------------------|
+| 1             | CASH            | Cash/Tunai               | false                    |
+| 2             | BANK            | Bank Transfer            | false                    |
+
+
+### Transaction Status
+| trx_status_id | trx_status_code | trx_status_name          | trx_status_is_public     |
+|---------------|-----------------|--------------------------|--------------------------|
+| 1             | 001             | Approved                 | false                    |
+| 2             | 002             | Cancelled                | false                    |
+| 3             | 003             | Pending                  | false                    |
+| 4             | 008             | Draft                    | false                    |
+| 5             | 009             | Denied                   | false                    |
+
 
 ---
 Powered by Berani Digital ID © 2024
