@@ -61,8 +61,8 @@ NOTE
 |-------------|---------------|------------------------|-------------------------|
 | 1           | IN            | Setoran                | false                   |
 | 2           | OUT           | Penarikan              | false                   |
-| 3           | TF-IN         | Transfer Keluar        | false                   |
-| 4           | TF-OUT        | Transfer Masuk         | false                   |
+| 3           | TF-IN         | Transfer Masuk         | false                   |
+| 4           | TF-OUT        | Transfer Keluar        | false                   |
 
 
 ### Transaction Method
@@ -70,6 +70,7 @@ NOTE
 |---------------|-----------------|--------------------------|--------------------------|
 | 1             | CASH            | Cash/Tunai               | false                    |
 | 2             | BANK            | Bank Transfer            | false                    |
+| 3             | SYSTEM          | Transaction              | false                    |
 
 
 ### Transaction Status
