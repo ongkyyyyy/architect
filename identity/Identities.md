@@ -1,12 +1,21 @@
 # 🪪 Identities
 
-## Identity Entity
-The following properties for user_identities table:
+## User Identity Entity
+The following properties for idt_users table (associative table for Users and Access):
+
+| Name                | Type      | Description                                      | Unique | Required  |
+|---------------------|-----------|--------------------------------------------------|--------|-----------|
+| user_id             | String    | Foreign key from Users table                     |   ❌   |    ✅    |
+| idt_personal_id     | INT       | Foreign key from Access table                    |   ❌   |    ✅    |
+
+
+## Personal Identity Entity
+The following properties for idt_personals table:
 
 | Name              | Type      | Description                                             | Unique | Required  |
 |-------------------|-----------|---------------------------------------------------------|--------|-----------|
 | id                | INT       | Primary key, unique record ID                           |   ✅   |    ✅    |
-| user_id           | INT       | Foreign key from User table                             |   ❌   |    ✅    |
+| user_id           | INT       | Foreign key from User table                             |   ❌   |    ❌    |
 | agama             | STRING    | Religion of the individual                              |   ❌   |    ❌    |
 | alamat            | STRING    | Address of the individual                               |   ❌   |    ❌    |
 | berlaku_hingga    | STRING    | Validity period of the ID                               |   ❌   |    ❌    |
