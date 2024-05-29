@@ -1,7 +1,7 @@
 # 💵 Transactions
 
 ## Transaction Entity
-The following properties for fin_trx table:
+The following properties for fin_transactions table:
 
 | Name              | Type      | Description                                   | Unique | Required  |
 |-------------------|-----------|-----------------------------------------------|--------|-----------|
