@@ -22,6 +22,7 @@ The following properties for user_wallet_type table:
 | wallet_account_type       | String    | Type of the wallet (Debit/Credit)         |   ❌   |    ✅    |
 | wallet_type_is_public     | boolean   | Is wallet type public (Default: False)    |   ❌   |    ✅    |
 | wallet_type_is_active     | boolean   | Is wallet type active (Default: True)     |   ❌   |    ✅    |
+| wallet_type_is_credit     | boolean   | Is wallet type credit (Default: True)     |   ❌   |    ✅    |
 
 NOTE
 - Unique: Ensures the uniqueness of the values entered into a property of a database table.

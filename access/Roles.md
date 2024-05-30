@@ -39,7 +39,7 @@ The following properties for access_role_permissions table (associative table fo
 | permission_id         | INT       | Foreign key from Permissions table               |   ❌   |    ✅    |
 
 ## Access Roles Entity
-The following properties for access_roles table (associative table for Access and Roles):
+The following properties for access_to_roles table (associative table for Access and Roles):
 
 | Name                  | Type      | Description                                      | Unique | Required  |
 |-----------------------|-----------|--------------------------------------------------|--------|-----------|
