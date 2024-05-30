@@ -23,6 +23,7 @@ The following properties for user_wallet_type table:
 | wallet_type_is_public     | boolean   | Is wallet type public (Default: False)    |   ❌   |    ✅    |
 | wallet_type_is_active     | boolean   | Is wallet type active (Default: True)     |   ❌   |    ✅    |
 | wallet_type_is_credit     | boolean   | Is wallet type credit (Default: True)     |   ❌   |    ✅    |
+| currency_id               | boolean   | Foreign key from Currency table           |   ❌   |    ✅    |
 
 NOTE
 - Unique: Ensures the uniqueness of the values entered into a property of a database table.
