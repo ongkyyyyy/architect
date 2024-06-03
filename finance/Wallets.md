@@ -25,6 +25,7 @@ The following properties for user_wallet_type table:
 | wallet_description        | String    | Description of wallet type                |   ❌   |    ✅    |
 | wallet_limit              | INT       | Limit of wallet type each user            |   ❌   |    ✅    |
 | wallet_type_is_active     | boolean   | Is wallet type active (Default: True)     |   ❌   |    ✅    |
+| wallet_type_is_creatable  | boolean   | Is wallet creatable (Default: True)       |   ❌   |    ✅    |
 | wallet_type_is_creditable | boolean   | Is wallet creditable (Default: True)      |   ❌   |    ✅    |
 | wallet_type_is_debitable  | boolean   | Is wallet debitable (Default: True)       |   ❌   |    ✅    |
 | wallet_type_is_public     | boolean   | Is wallet type public (Default: False)    |   ❌   |    ✅    |
@@ -51,19 +52,23 @@ A Wallet Account Type is a classification used to indicate the nature of transac
    - The status of the wallet determines whether users can perform transactions with it.
    - Examples of inactive wallets include unauthorized access attempts, security concerns, or other exceptional cases.
 
-4. Is Creditable Wallet: A wallet represents the accessible to credit (out/withdraw) transaction by the user.
+4. Is Creatable Wallet: An creatable wallet represents the ability to create new wallet by the user directly.
+   - By default, wallets are creatable. Users can directly create and transact with the wallets. Non creditable wallet only can be created by administrators or designated personnel have the authority to it.
+   - Examples of non creatable wallets include benefits fund, allowance wallet, or other exceptional cases.
+
+5. Is Creditable Wallet: A wallet represents the accessible to credit (out/withdraw) transaction by the user.
    - Users can directly initiate credit (out/withdraw) transactions with a creditable wallet. When a user wants to transact with a creditable wallet, they can initiate the process by making a request.
    - Examples of non creditable wallets include long term funds, saving plan, or other not withdrawable cases.
 
-5. Is Debitable Wallet: A wallet represents the accessible to debit (in/deposit) transaction by the user.
+6. Is Debitable Wallet: A wallet represents the accessible to debit (in/deposit) transaction by the user.
    - Users can directly initiate debit (in/deposit) transactions with a debitable wallet. When a user wants to transact with a debitable wallet, they can initiate the process by making a request.
    - Examples of non creditable wallets include benefits fund, allowance wallets, or other not addable cases.
    
-6. Is Public Wallet: A public wallet is accessible by all users, allowing them to view its balance and transaction history.
+7. Is Public Wallet: A public wallet is accessible by all users, allowing them to view its balance and transaction history.
    - By default, wallets are not public. In other words, users cannot directly access or transact with a public wallet. Only administrators or designated personnel have the authority to manage and withdraw funds from a public wallet. It serves as a transparent account for various purposes.
    - Examples of public wallets include collaborative, sharing, and kindness wallet for a common cause.
 
-7. Is User Wallet: A wallet represents the transactional wallet accessible to the user by default.
+8. Is User Wallet: A wallet represents the transactional wallet accessible to the user by default.
    - In contrast, a non user wallet is not directly transactable by the user. Instead, it is managed by an administrator or system. Users cannot directly initiate transactions with a non user wallet. When a user wants to transact with a non user wallet, they can initiate the process by making a request.
    - Examples of non user wallets include reserved funds that are not available for regular transactions.
 
