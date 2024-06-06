@@ -28,6 +28,8 @@ At Berani Digital ID, we believe that knowledge should be shared, nurtured, and 
 - **Collaboration**: Connect with a diverse community of developers, designers, and domain experts.
 - **Access to Experts**: Learn from experienced mentors who are passionate about empowering others.
 
+Also see the contributon guideline [CONTRIBUTING.md](CONTRIBUTING.md)
+
 # Library
 
 ## Naming Convention
